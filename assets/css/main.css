@@ -214,12 +214,14 @@
 .news ul li .new-img {
   /* width: 38rem; */
   /* height: 23rem; */
+  height: 24rem;
   margin-bottom: 2rem;
   overflow: hidden;
   transition: all 500ms ease;
 }
 .news ul li .new-img img:hover {
   transform: scale(1.2);
+  height: 100%;
   overflow: hidden;
   transition: all 500ms ease;
 }
