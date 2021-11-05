@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "pingfang";
+  background-color: #f2f4fc;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+}
+ul {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0rem;
+  -webkit-margin-end: 0rem;
+  -webkit-padding-start: 0rem;
+}
+.containers {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.swiper-container {
+  width: 100%;
+  height: 46.5rem;
+}
+.swiper-slide {
+  width: 100%;
+  height: 46.5rem;
+}
+.text-center {
+  text-align: center;
+}
+/* 单行文本省略 */
+.hidden1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 多行文本溢出 */
+.hidden3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.hidden2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/* 响应式导航 */
+/* .navbar {
+  padding-bottom: unset !important;
+} */
+.nav-link {
+  text-align: left !important;
+  padding-left: 2rem !important;
+}

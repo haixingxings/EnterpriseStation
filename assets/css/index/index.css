@@ -1,0 +1,207 @@
+/* 轮播图 */
+/* .swiper-content img {
+  height: 46.5rem;
+} */
+.my-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+@media only screen and (max-width: 50rem) {
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+  /* .swiper-content {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: calc(100vh / 3);
+  }
+  .swiper-content .swiper-container {
+    height: 100%;
+  }
+  .swiper-content img {
+    height: calc(100vh / 3);
+  } */
+}
+@media only screen and (max-width: 30rem) {
+  .swiper-content {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: calc(100vh / 4);
+  }
+  .swiper-content .swiper-container {
+    height: 100%;
+  }
+  .swiper-content img {
+    height: calc(100vh / 4);
+  }
+}
+/* 服务项目 */
+.service {
+  background-color: #fff;
+}
+.service ul {
+  display: flex;
+  justify-content: space-between;
+}
+.service ul li {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  align-items: center;
+}
+.service ul li .service-title {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.service ul li .service-content {
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+  margin-top: 2rem;
+  line-height: 2.2rem;
+}
+.product-more {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.product-more .product-btn {
+  margin-top: 3rem;
+  width: 16.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  background: #1577e4;
+  border-radius: 5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 0.036rem;
+  text-align: center;
+}
+.product-more .product-btn:hover {
+  background: #4756ff;
+  text-decoration: none;
+}
+@media only screen and (max-width: 50rem) {
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+}
+@media only screen and (max-width: 30rem) {
+  .service ul {
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  .service ul li {
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .service ul li .service-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .service ul li .service-img {
+    margin-right: 2rem;
+  }
+  .service ul li .service-title {
+    text-align: left;
+  }
+  .service ul li .service-content {
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .product-more .product-btn {
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+    width: 13.5rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
+/* 公司优势 */
+.teclolojy {
+  color: #fff;
+  background-image: url("https://online.wangsu.com/nuxt-static/img/product-value-bg.01c147e.png");
+  background-size: cover;
+}
+.teclolojy .sub-title {
+  color: #eee;
+}
+.teclolojy .tec-list {
+  max-width: 120rem;
+  /* margin: 3.6rem auto 0; */
+  font-size: 0;
+  padding: 1rem;
+}
+.teclolojy .tec-list li {
+  width: calc(50% - 0.8rem);
+  height: 16.6rem;
+  padding: 2.7rem 5rem 2.3rem 4.2rem;
+  margin-bottom: 1.2rem;
+  vertical-align: top;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0.4rem;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+.teclolojy .tec-list li:hover {
+  box-shadow: 1.5rem 1.5rem 0.8rem 0 #eee inset;
+}
+/* .teclolojy .tec-list li {
+  margin: 0 1rem;
+} */
+.teclolojy .tec-list .advantage_img {
+  padding: 2.5rem;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5rem;
+  box-shadow: 0 0.2rem 0.8rem 0 rgb(173 190 204 / 35%);
+}
+.teclolojy .tec-list .advantage_content {
+  width: calc(100% - 12.4rem);
+  height: 100%;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: left;
+  padding-left: 2rem;
+}
+@media only screen and (max-width: 50rem) {
+  .teclolojy .tec-list li {
+    width: calc(100% - 0.8rem);
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+  }
+  .teclolojy .tec-list .advantage_content {
+    width: calc(100% - 10.4rem);
+  }
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+}
+@media only screen and (max-width: 30rem) {
+}
+.teclolojy .tec-list .advantage_content .item_title {
+  margin-top: 0.4rem;
+  font-size: 2.2rem;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 3rem;
+}
+.teclolojy .tec-list .advantage_content .item_des {
+  margin-top: 0.9rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 2.1rem;
+  word-break: break-all;
+  overflow: hidden;
+}

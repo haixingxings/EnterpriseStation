@@ -1,0 +1,65 @@
+.about {
+  background-color: #fff;
+  margin-top: 3rem;
+}
+.addressInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.addressInfo .info {
+  width: 50%;
+  padding-left: 2rem;
+}
+.intrduce {
+  font-size: 1.7rem;
+  color: #555;
+  text-indent: 3rem;
+  line-height: 3rem;
+}
+.address-icon {
+  margin-top: 2rem;
+}
+.address-icon .address-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #999;
+  font-size: 1.5rem;
+}
+.address-icon .address-item img {
+  margin-right: 1rem;
+}
+/* 百度地图样式 */
+#allmap {
+  width: 50%;
+  height: 30rem;
+  overflow: hidden;
+  margin: 0;
+  font-family: "微软雅黑";
+}
+@media only screen and (max-width: 50rem) {
+}
+@media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
+}
+@media only screen and (max-width: 30rem) {
+  .addressInfo {
+    flex-direction: column;
+    justify-content: unset;
+    padding: 0 2rem;
+  }
+  #allmap {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
+  }
+  .addressInfo .info {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  .intrduce {
+    font-size: 1.6rem;
+  }
+}
