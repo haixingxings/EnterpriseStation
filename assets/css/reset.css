@@ -65,14 +65,15 @@ ul {
   padding-bottom: unset !important;
 } */
 .nav-link {
+  text-align: center !important;
   padding-left: 2rem !important;
 }
 @media only screen and (max-width: 50rem) {
+  .nav-link {
+    text-align: left !important;
+  }
 }
 @media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
 }
 @media only screen and (max-width: 30rem) {
-  .nav-link {
-    text-align: left !important;
-  }
 }

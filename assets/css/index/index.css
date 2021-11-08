@@ -91,7 +91,7 @@
 @media only screen and (max-width: 30rem) {
   .service ul {
     flex-direction: column;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
   .service ul li {
     flex-direction: row;
@@ -137,7 +137,7 @@
   max-width: 120rem;
   /* margin: 3.6rem auto 0; */
   font-size: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .teclolojy .tec-list li {
   width: calc(50% - 0.8rem);
@@ -180,9 +180,14 @@
   .teclolojy .tec-list li {
     border-radius: 1rem;
     width: calc(100% - 0.8rem);
-    display: block;
     margin-bottom: 1.5rem;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .teclolojy .tec-list .advantage_content .item_title {
+    font-size: 1.6rem !important;
+    line-height: 2rem !important;
   }
   .teclolojy .tec-list .advantage_content {
     width: calc(100% - 10.4rem);
@@ -191,6 +196,12 @@
 @media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
 }
 @media only screen and (max-width: 30rem) {
+  .teclolojy .tec-list li {
+    display: flex;
+  }
+  .teclolojy .tec-list .advantage_img {
+    padding: 1.5rem;
+  }
 }
 .teclolojy .tec-list .advantage_content .item_title {
   margin-top: 0.4rem;

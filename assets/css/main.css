@@ -27,7 +27,7 @@
   justify-content: space-between;
 }
 .u-logo {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-top: 1.3rem;
 }
 .u-logo a img {
@@ -49,7 +49,7 @@
 } */
 .u-btn a {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   width: 10rem;
   color: #ffffff;
   font-size: 1.6rem;
@@ -123,6 +123,7 @@
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  text-align: center;
 }
 .footer .footer-nav ul {
   display: inline-block;
@@ -148,28 +149,39 @@
 }
 .footer .footer-code span {
   line-height: 140%;
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   font-family: 微软雅黑;
-  color: rgb(255, 255, 255);
+  color: #999;
 }
 @media only screen and (max-width: 50rem) {
   .footer {
     padding: 3rem 0 2rem;
   }
   .footer .footer-content {
-    display: inline-block;
-    text-align: center;
+    text-align: left;
+  }
+  .footer .footer-content .logo {
+    display: none;
   }
   .footer .footer-nav {
     margin: 2rem 0;
   }
+  .footer .footer-code .code p {
+    display: none;
+  }
   .footer .footer-code .code img {
-    margin-top: 1.8rem;
+    /* margin-top: 1.8rem; */
   }
 }
 @media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
 }
 @media only screen and (max-width: 30rem) {
+  .footer .footer-content {
+    display: inline-block;
+  }
+  .footer .footer-code {
+    text-align: center;
+  }
 }
 .copyright {
   text-align: center;
@@ -178,12 +190,13 @@
   font-family: 微软雅黑;
   font-size: 1.3rem;
   padding: 3rem;
+  margin-bottom: 0;
 }
 /* 新闻资讯 */
 .news ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .news ul li {
   min-width: 20.8rem;
@@ -191,7 +204,7 @@
   /* margin-right: 2rem; */
   margin-bottom: 3rem;
   width: calc(33.3333% - 2rem);
-  padding: 1rem;
+  /* padding: 1rem; */
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
@@ -214,20 +227,21 @@
 .news ul li .new-img {
   /* width: 38rem; */
   /* height: 23rem; */
-  height: 24rem;
+  /* height: 24rem; */
   margin-bottom: 2rem;
-  overflow: hidden;
-  transition: all 500ms ease;
-}
-.news ul li .new-img img:hover {
-  transform: scale(1.2);
-  height: 100%;
   overflow: hidden;
   transition: all 500ms ease;
 }
 .news ul li .new-img img {
   width: 100%;
-  height: 100%;
+  height: 24rem;
+  object-fit: cover;
+}
+.news ul li .new-img img:hover {
+  transform: scale(1.2);
+  height: 24rem;
+  overflow: hidden;
+  transition: all 500ms ease;
 }
 .news ul li .new-title {
   font-size: 1.8rem;
@@ -246,6 +260,11 @@
   margin-top: 1rem;
 }
 @media only screen and (max-width: 50rem) {
+  .news ul li .new-img img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
 }
 @media only screen and (min-width: 30.0625rem) and (max-width: 50rem) {
 }
@@ -267,7 +286,7 @@
   }
   .news ul li .new-title {
     font-size: 1.4rem;
-    width: 22rem;
+    width: 19.5rem;
   }
   .news ul li .new-list-title {
     font-size: 1.4rem;
@@ -283,7 +302,6 @@
   border-bottom: 1px solid #ddd;
 }
 .bread-content .bread {
-  padding: 0 2rem;
   height: 6rem;
   line-height: 6rem;
   font-size: 1.4rem;
@@ -322,13 +340,11 @@
   font-size: 2.6rem;
   color: #333333;
   letter-spacing: 0.042rem;
-  padding: 0 2rem;
   margin-top: 1rem;
 }
 .product-top .product-subContent {
   font-size: 1.5rem;
   color: #999;
-  padding: 0 2rem;
 }
 .product-top .product-content .title-icon {
   display: inline-block;
@@ -383,7 +399,8 @@ header .btn-default {
 }
 .banner {
   width: 100%;
-  overflow: hidden;
+  height: 46.5rem;
+  object-fit: cover;
 }
 .dropdown {
   margin-top: 5px;

@@ -20,7 +20,7 @@
   <body>
     <!-- 导航 -->
     <div class="header">
-      <div class="containers">
+      <div class="container">
         <nav
           class="navbar navbar-expand-lg navbar-dark bg-dark"
           style="padding-right: 3rem"
@@ -63,7 +63,7 @@
     </div>
     <!-- 面包屑 -->
     <section class="bread-content">
-      <div class="containers">
+      <div class="container">
         <section class="bread">
           <a href="./index.html">首页</a>
           <img src="./assets//img/right.png" alt="" class="bread-icon" />
@@ -73,7 +73,7 @@
     </section>
     <!-- 标题 -->
     <section class="product-top">
-      <div class="containers">
+      <div class="container">
         <div class="product-content">
           <span class="title-icon"></span
           ><span class="product-title">关于我们</span>
@@ -81,8 +81,9 @@
         <div class="product-subContent">至诚服务，用心服务</div>
       </div>
     </section>
+    <!-- 地址内容 -->
     <section class="modal1 about">
-      <div class="containers">
+      <div class="container">
         <section class="addressInfo">
           <div id="allmap"></div>
           <div class="info">
@@ -116,7 +117,7 @@
       </div>
     </section>
     <section class="footer">
-      <div class="containers footer-content">
+      <div class="container footer-content">
         <div class="logo">
           <img src="./assets//img/logo.png" alt="" />
           <p>
@@ -149,7 +150,7 @@
         <div class="footer-code">
           <div class="code">
             <p>手机二维码</p>
-            <img src="./assets/img//code1.png" alt="" />
+            <img src="./assets/img/code1.png" alt="" />
           </div>
           <p class="hot-line">服务热线：<span>400-582-5553</span></p>
         </div>
@@ -157,10 +158,7 @@
     </section>
     <footer>
       <p class="copyright">
-        <span
-          >Copyright © 2015 - 2021 Cld , All Rights Reserved
-          聚壹信息科技有限公司 版权所有 闽ICP备21323123号</span
-        >
+        <span>Copyright © 2015 - 2021 Cld , All Rights Reserved</span>
       </p>
     </footer>
     <script
@@ -195,7 +193,6 @@
         opts
       ); // 创建信息窗口对象
       marker.addEventListener("click", function () {
-        console.log("点击");
         map.openInfoWindow(infoWindow, point); //开启信息窗口
       });
     </script>
